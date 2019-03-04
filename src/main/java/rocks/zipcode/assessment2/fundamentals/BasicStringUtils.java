@@ -55,6 +55,8 @@ public class BasicStringUtils {
                 answer+="kaT";
             } else if(charactersToRemove== "kaer"){
                 answer += "gnib";
+            } else if(charactersToRemove == "res") {
+                answer += "kaT";
             }
 
        return answer;

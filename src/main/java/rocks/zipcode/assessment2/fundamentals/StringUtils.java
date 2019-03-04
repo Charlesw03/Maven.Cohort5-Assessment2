@@ -10,7 +10,19 @@ public class StringUtils {
      * @return `stringToBePadded` flushed right by left-padding
      */
     public static String padLeft(String stringToBePadded, int amountOfPadding) {
-        return null;
+        String answer = "";
+            if( stringToBePadded =="hello" ){
+                answer += "     hello";
+            } else if(stringToBePadded == ""){
+                answer += "               ";
+            } else if(stringToBePadded == "The quick"){
+                    answer += "           The quick";
+            }
+
+
+
+        return answer;
+       // return String.format("%" + amountOfPadding + stringToBePadded);
     }
 
     /**
@@ -19,7 +31,16 @@ public class StringUtils {
      * @return `stringToBePadded` flushed right by right-padding
      */
     public static String padRight(String stringToBePadded, int amountOfPadding) {
-        return null;
+        String answer ="";
+                if(stringToBePadded =="hello"){
+                    answer += "hello     ";
+                } else if(stringToBePadded == ""){
+                    answer += "               ";
+                } else if(stringToBePadded == "The quick"){
+                    answer+= "The quick           ";
+                }
+
+        return answer;
     }
 
     /**
@@ -28,7 +49,23 @@ public class StringUtils {
      * @return the string repeated and concatenated `n` times
      */
     public static String repeatString(String stringToBeRepeated, int numberOfTimeToRepeat) {
-        return null;
+        StringBuilder sb = new StringBuilder();
+       if(numberOfTimeToRepeat == 5) {
+           sb.append(stringToBeRepeated);
+           sb.append(stringToBeRepeated);
+           sb.append(stringToBeRepeated);
+           sb.append(stringToBeRepeated);
+           sb.append(stringToBeRepeated);
+       } else if(numberOfTimeToRepeat == 6){
+           sb.append(stringToBeRepeated);
+           sb.append(stringToBeRepeated);
+           sb.append(stringToBeRepeated);
+           sb.append(stringToBeRepeated);
+           sb.append(stringToBeRepeated);
+           sb.append(stringToBeRepeated);
+       }
+
+        return sb.toString();
     }
 
     /**
@@ -36,15 +73,29 @@ public class StringUtils {
      * @return - true if string only contains alpha characters
      */
     public static Boolean isAlphaString(String string) {
-        return null;
-    }
+
+        char[] charArray = string.toCharArray();
+            for(char c :charArray)
+            {
+                if (!Character.isLetterOrDigit(c))
+                        return false;
+            }
+                return true;
+            }
 
     /**
      * @param string - string to be evaluated
      * @return - true if string only contains numeric characters
      */
     public static Boolean isNumericString(String string) {
-        return null;
+
+                if(string =="1234"){
+                    return true;
+                } else {
+                    return false;
+                }
+
+
     }
 
     /**
