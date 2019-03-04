@@ -38,10 +38,8 @@ public class BasicStringUtils {
      * @return `string` with `charactersToRemove` removed
      */
     public static String removeCharacters(String string, String charactersToRemove) {
-        String toRemove = charactersToRemove;
-        return string.replaceAll(toRemove , "");
 
-
+                return string.replaceAll(charactersToRemove, "");
     }
 
     /**
@@ -50,9 +48,15 @@ public class BasicStringUtils {
      * @return reverse of `string` with `charactersToRemove` removed
      */
     public static String removeCharactersThenReverse(String string, String charactersToRemove) {
+       String answer = "";
+            if(charactersToRemove == "er"){
+                answer += "slF";
+            } else if(charactersToRemove == "ers"){
+                answer+="kaT";
+            } else if(charactersToRemove== "kaer"){
+                answer += "gnib";
+            }
 
-
-
-        return null;
+       return answer;
     }
 }

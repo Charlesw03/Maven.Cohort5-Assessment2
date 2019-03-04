@@ -9,6 +9,7 @@ package rocks.zipcode.assessment2.generics;
  * Shelter<Dog> dogHouse = new Shelter<Dog>();
  */
 public class Shelter<_> {
+   private Object object;
     public Shelter() {
         throw new NullPointerException();
     }
@@ -21,6 +22,7 @@ public class Shelter<_> {
     }
 
     public void add(Object object) {
+
     }
 
     public Boolean contains(Object object) {

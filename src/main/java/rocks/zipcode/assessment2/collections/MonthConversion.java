@@ -4,6 +4,9 @@ package rocks.zipcode.assessment2.collections;
  * Use a map to solve
  */
 public class MonthConversion {
+    private Integer monthNumber;
+    private String monthName;
+
     /**
      * @param monthNumber - ordinal of month in the year; i.e. January = 1, February = 2
      * @param monthName - name of month

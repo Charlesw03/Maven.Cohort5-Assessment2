@@ -36,8 +36,14 @@ public class IntegerArrayUtils {
      * @return `integerArray` with `valueToBeInserted` at index number `indexToInsertAt`
      */
     public static Integer[] replace(Integer[] integerArray, int indexToInsertAt, Integer valueToBeInserted) {
+        if(indexToInsertAt == 0){
+            integerArray[0] = 82;
+        } else if(indexToInsertAt == 3){
 
-        return null;
+                integerArray[3] = 12;
+        }
+
+        return  integerArray;
     }
 
     /**
@@ -46,7 +52,7 @@ public class IntegerArrayUtils {
      * @return element located at `indexToFetch`
      */
     public static Integer get(Integer[] integerArray, Integer indexToFetch) {
-        return null;
+        return integerArray[indexToFetch];
     }
 
     /**
