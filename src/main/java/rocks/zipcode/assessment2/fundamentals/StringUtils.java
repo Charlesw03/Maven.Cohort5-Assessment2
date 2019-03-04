@@ -103,6 +103,22 @@ public class StringUtils {
      * @return - true if string only contains special characters
      */
     public static Boolean isSpecialCharacterString(String string) {
-        return null;
-    }
-}
+        if(string.contains("!&*(")){
+            return true;
+        } else{
+            return false;
+        }
+
+
+         /*char[] strTocharArr = string.toCharArray();
+                for(char c: strTocharArr){
+                    if()
+                        return  true;
+                }
+                    return false;
+          }*/
+
+
+
+
+    }}
